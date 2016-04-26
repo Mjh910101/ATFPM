@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/like_dataBg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@color/line_gray_01" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="25"></RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/like_gather"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/like_speakTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/speak_name"
+                        android:textColor="@color/text_green_01"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <View
+                        android:id="@+id/like_speakLine"
+                        android:layout_width="fill_parent"
+                        android:layout_height="3dp"
+                        android:layout_below="@id/like_speakTitle"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@color/text_green_01" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/like_send"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/like_dynamicTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/dynamic_name"
+                        android:textColor="@color/text_green_01"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <View
+                        android:id="@+id/like_dynamicLine"
+                        android:layout_width="fill_parent"
+                        android:layout_height="3dp"
+                        android:layout_below="@id/like_dynamicTitle"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@color/text_green_01" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_gray_01" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <View
+                    android:id="@+id/like_speak_bg"
+                    android:layout_width="10dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:visibility="gone" />
+
+                <ListView
+                    android:id="@+id/like_dataList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5dp"
+                    android:divider="@color/white_lucency"
+                    android:dividerHeight="10dp"></ListView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/like_notContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/not_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_18"
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/like_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/Users/Hua/StudioProjects/ATFPM/app/src/main/res/layout/activity_like.xml -->

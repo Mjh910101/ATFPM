@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/Hua/StudioProjects/ATFPM/app/libs/library-1.2.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="82eda228c92c1aab3c0c8626497f13baf249cdb4">
+        <dex dex="/Users/Hua/StudioProjects/ATFPM/app/build/intermediates/pre-dexed/debug/library-1.2.2-e00def69241189a4a02ce61181642931ce22af75.jar" />
+    </item>
+    <item
+        jar="/Users/Hua/StudioProjects/ATFPM/app/libs/xUtils-2.6.14.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f10c51f3e0732fdeefe6e104279a58e275879b6c">
+        <dex dex="/Users/Hua/StudioProjects/ATFPM/app/build/intermediates/pre-dexed/debug/xUtils-2.6.14-aae0c47bd5a0aee98f553a801e257db24ebd68f6.jar" />
+    </item>
+    <item
+        jar="/Users/Hua/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="/Users/Hua/StudioProjects/ATFPM/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-9fba4f8442af10f692c9e376be9bce471494108e.jar" />
+    </item>
+    <item
+        jar="/Users/Hua/StudioProjects/ATFPM/app/libs/universal-image-loader-1.9.2-SNAPSHOT-with-sources.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3526df34297bab9b9cc33d93d6e68f60fc2f94ea">
+        <dex dex="/Users/Hua/StudioProjects/ATFPM/app/build/intermediates/pre-dexed/debug/universal-image-loader-1.9.2-SNAPSHOT-with-sources-a188cefb39c40063553d9ce4f2aa7c3b9c98538e.jar" />
+    </item>
+    <item
+        jar="/Users/Hua/StudioProjects/ATFPM/app/libs/SMSSDK-1.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="80126bfb6fa5f14eb5cea105efeeca52b487ab6b">
+        <dex dex="/Users/Hua/StudioProjects/ATFPM/app/build/intermediates/pre-dexed/debug/SMSSDK-1.2.1-d2f80a82f6748a7f7ddb5ef5048bc8b21a39eb66.jar" />
+    </item>
+    <item
+        jar="/Users/Hua/StudioProjects/ATFPM/app/libs/MobTools.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7f36cb52cc33dff4f38438bc19d457c6a1c05b40">
+        <dex dex="/Users/Hua/StudioProjects/ATFPM/app/build/intermediates/pre-dexed/debug/MobTools-812fc38c149d9ad8fa332166ae9d9f6694540603.jar" />
+    </item>
+    <item
+        jar="/Users/Hua/StudioProjects/ATFPM/app/libs/jpush-sdk-release1.7.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3c85f598c111fd4d7b3b9f9fa1f8f10bfc31a898">
+        <dex dex="/Users/Hua/StudioProjects/ATFPM/app/build/intermediates/pre-dexed/debug/jpush-sdk-release1.7.4-174e741fdb4c59c329f231e071e0752247c766af.jar" />
+    </item>
+
+</items>

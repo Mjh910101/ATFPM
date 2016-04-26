@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="6dp">
+
+    <RelativeLayout
+        android:id="@+id/court_item_messageBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/court_green_bg">
+
+        <View
+            android:id="@+id/court_item_ballView"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="3dp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@color/line_gray_01"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="17dp"
+            android:layout_alignBottom="@id/court_item_ballView"/>
+
+        <ImageView
+            android:id="@+id/court_item_ball"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/court_green_ball" />
+
+        <TextView
+            android:id="@+id/court_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/court_item_ball"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_17" />
+
+        <TextView
+            android:id="@+id/court_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/court_item_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="3dp"
+            android:text="2015-03-18"
+            android:textColor="@color/text_gray_01"
+            android:textSize="@dimen/text_size_15" />
+
+
+        <TextView
+            android:id="@+id/court_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/court_item_time"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:paddingBottom="8dp"
+            android:text="content"
+            android:textColor="@color/text_gray_01"
+            android:textSize="@dimen/text_size_15" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/court_listitem_adBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/court_listitem_ad"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/dynamic_ad_icon" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_gravity="center"
+    android:background="@drawable/white_background_white_frame_5"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/speak_warning_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_13" />
+
+        <LinearLayout
+            android:id="@+id/speak_warning_checkBox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/speak_warning_check"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/speak_off_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="@string/speak_check_text"
+                android:textColor="@color/text_green_01"
+                android:textSize="@dimen/text_size_14" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/line_gray_01" />
+
+        <TextView
+            android:id="@+id/speak_warning_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/green_background_green_frame_circle"
+            android:gravity="center"
+            android:text="OK"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_17" />
+    </LinearLayout>
+
+</ScrollView>

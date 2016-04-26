@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/white_background_green_frame_0"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/register_v2_telIcon"
+                        android:layout_width="20dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/tel_num"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/register_v2_telCodeName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:maxLength="2"
+                        android:text="@string/cade_mo_s_name"
+                        android:textColor="@color/text_green_01"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <TextView
+                        android:id="@+id/register_v2_telCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@id/register_v2_telCodeName"
+                        android:text="+853"
+                        android:textColor="@color/text_green_01"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/register_v2_telCode"
+                        android:layout_alignTop="@id/register_v2_telCode"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@id/register_v2_telCode"
+                        android:background="@color/line_gray_01" />
+
+                    <EditText
+                        android:id="@+id/register_v2_telInput"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@id/register_v2_telCode"
+                        android:background="@drawable/input_stype_lucency"
+                        android:hint="@string/input_tel"
+                        android:inputType="number"
+                        android:textSize="@dimen/text_size_17" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/must"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_size_15" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/white_background_green_frame_0"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/register_v2_pNameIcon"
+                        android:layout_width="20dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/user_g_icon" />
+
+                    <EditText
+                        android:id="@+id/register_v2_pNameInput"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/register_v2_pNameIcon"
+                        android:background="@drawable/input_stype_lucency"
+                        android:hint="@string/input_p_name"
+                        android:textSize="@dimen/text_size_17" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/must"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_size_15" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/white_background_green_frame_0"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/register_v2_sNameIcon"
+                        android:layout_width="20dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/user_g_icon" />
+
+                    <EditText
+                        android:id="@+id/register_v2_sNameInput"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/register_v2_sNameIcon"
+                        android:background="@drawable/input_stype_lucency"
+                        android:hint="@string/input_s_name"
+                        android:textSize="@dimen/text_size_17" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/must"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_size_15"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/white_background_green_frame_0"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/register_v2_passwordIcon"
+                        android:layout_width="20dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/password_icon" />
+
+                    <EditText
+                        android:id="@+id/register_v2_passwordInput"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/register_v2_passwordIcon"
+                        android:background="@drawable/input_stype_lucency"
+                        android:hint="@string/input_password"
+                        android:inputType="textPassword"
+                        android:textSize="@dimen/text_size_17" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/must"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_size_15" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="20dp">
+
+                    <ImageView
+                        android:id="@+id/register_v2_passwordJudge"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/password_true"
+                        android:visibility="invisible" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@id/register_v2_passwordJudge"
+                        android:background="@drawable/white_background_green_frame_0">
+
+                        <ImageView
+                            android:id="@+id/register_v2_passwordAgainIcon"
+                            android:layout_width="20dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/password_icon" />
+
+                        <EditText
+                            android:id="@+id/register_v2_passwordAgainInput"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/register_v2_passwordAgainIcon"
+                            android:background="@drawable/input_stype_lucency"
+                            android:hint="@string/input_password_again"
+                            android:inputType="textPassword"
+                            android:textSize="@dimen/text_size_17" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/must"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:id="@+id/register_v2_registerBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/bg_stype_green"
+                    android:gravity="center"
+                    android:text="@string/confirm_register"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_20" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/register_v2_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/Users/Hua/StudioProjects/ATFPM/app/src/main/res/layout/activity_register_v2.xml -->

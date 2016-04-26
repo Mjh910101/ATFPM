@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_stype_04"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/inputDialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:textColor="@color/text_black_02"
+        android:textSize="@dimen/text_size_20"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/input_stype_04" >
+
+        <ImageView
+            android:id="@+id/inputDialog_cancelInput"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/cancel_input" />
+
+        <EditText
+            android:id="@+id/inputDialog_ET"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_toLeftOf="@id/inputDialog_cancelInput"
+            android:background="@drawable/input_stype_lucency" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/inputDialog_commit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/green_background_green_frame_circle"
+                android:gravity="center"
+                android:text="@string/confirm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/inputDialog_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/white_background_green_frame_circle"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/text_green_01"
+                android:textSize="@dimen/text_size_20" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/Hua/StudioProjects/ATFPM/app/src/main/res/layout/inputdialog.xml -->

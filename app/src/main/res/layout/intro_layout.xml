@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/intro_indexIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/intro_index_icon" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/intro_indexIcon"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/intro_index_bg_up"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/intro_name"
+                    android:textColor="@color/text_green_01"
+                    android:textSize="@dimen/text_size_17" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/intro_index_bg_context"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <View
+                    android:id="@+id/intro_upLine"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/line_gray_01" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/intro_upLine"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/intro_index_bg_middle"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <View
+                    android:id="@+id/intro_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/line_gray_01" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/intro_index_bg_context"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <TextView
+                    android:id="@+id/intro_memberList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/member_list"
+                    android:textColor="@color/text_green_01"
+                    android:textSize="@dimen/text_size_17" />
+
+                <View
+                    android:id="@+id/intro_downLine"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/intro_memberList"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line_gray_01" />
+
+                <ImageView
+                    android:id="@+id/intro_memberPic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/intro_downLine"
+                    android:layout_marginRight="3dp"
+                    android:src="@drawable/test_u_i" />
+
+                <TextView
+                    android:id="@+id/intro_memberName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/intro_memberPic"
+                    android:layout_toRightOf="@id/intro_memberPic"
+                    android:textColor="@color/text_green_01"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/intro_memberName"
+                    android:layout_toRightOf="@id/intro_memberPic"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/intro_index_bg_down" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

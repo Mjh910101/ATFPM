@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="1">
+        <!--
+           android:layout_marginLeft="5dp"
+          android:layout_marginRight="5dp"
+          android:layout_marginTop="5dp"
+        android:background="@color/line_gray_01"
+          android:paddingLeft="1dp"
+          android:paddingRight="1dp"
+          android:paddingTop="1dp">-->
+
+
+        <!--<LinearLayout
+            android:id="@+id/privacidade_contentBox"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:orientation="vertical">-->
+
+        <WebView
+            android:id="@+id/privacidade_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <!--</LinearLayout>-->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/privacidade_toolBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_gray_01" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/privacidade_concorda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/green_background_green_frame_circle"
+                    android:text="@string/concorda"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_17" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/privacidade_sair"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/white_background_green_frame_circle"
+                    android:text="@string/sair"
+                    android:textColor="@color/text_green_01"
+                    android:textSize="@dimen/text_size_17" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

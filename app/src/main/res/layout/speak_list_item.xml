@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/speak_item_userPicBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/speak_user_pig_bg"
+            android:gravity="center_vertical|right"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <ImageView
+                android:id="@+id/speak_item_userPic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/test_u_i"></ImageView>
+        </LinearLayout>
+
+        <RelativeLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/speak_item_dayTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="time"
+                android:textColor="@color/text_black_01"
+                android:textSize="@dimen/text_size_16"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/speak_item_contentBox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/speak_item_dayTime"
+                android:background="@drawable/speak_item_bg_v2">
+
+                <RelativeLayout
+                    android:id="@+id/speak_item_userMessageBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp">
+
+                        <TextView
+                            android:id="@+id/speak_item_userName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_17" />
+
+                        <ImageView
+                            android:id="@+id/speak_item_userType"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_alignBottom="@id/speak_item_userName"
+                            android:layout_alignTop="@id/speak_item_userName"
+                            android:layout_marginLeft="3dp"
+                            android:layout_toRightOf="@id/speak_item_userName"
+                            android:src="@drawable/mvip_icon" />
+
+                        <TextView
+                            android:id="@+id/speak_item_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/speak_item_userName"
+                            android:text="Time"
+                            android:textColor="@color/text_green_01"
+                            android:textSize="@dimen/text_size_12" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/speak_item_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/speak_item_userMessageBox"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_15" />
+
+                <LinearLayout
+                    android:id="@+id/speak_listitem_picGridBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/speak_item_content">
+
+                    <com.atfpm.view.InsideGridView
+                        android:id="@+id/speak_listitem_picGrid"
+                        android:layout_width="285dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp"
+                        android:horizontalSpacing="5dp"
+                        android:numColumns="3"
+                        android:verticalSpacing="5dp"></com.atfpm.view.InsideGridView>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/speak_item_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/speak_listitem_picGridBox"
+                    android:layout_margin="3dp"
+                    android:background="@color/line_gray_01" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/speak_item_line"
+                    android:paddingTop="3dp">
+
+                    <LinearLayout
+                        android:id="@+id/speak_item_commentBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="3dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginRight="3dp"
+                            android:src="@drawable/comment_icon" />
+
+                        <TextView
+                            android:id="@+id/speak_item_commentSum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/text_gray_03"
+                            android:textSize="@dimen/text_size_15" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/speak_item_likeBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/speak_item_commentBox"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/speak_item_goodIcon"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginRight="3dp"
+                            android:src="@drawable/like_off_icon" />
+
+                        <TextView
+                            android:id="@+id/speak_item_likeSum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/text_gray_03"
+                            android:textSize="@dimen/text_size_15" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/speak_listitem_adBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/speak_listitem_ad"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerCrop" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/dynamic_ad_icon" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/speak_item_contentBox"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/line_gray_01"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

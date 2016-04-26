@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="fill_parent"
+        android:background="@color/white" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/speak_dataListRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/speak_dataList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dp"
+            android:divider="@color/white_lucency"
+            android:dividerHeight="3dp"
+            android:paddingTop="5dp"></ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ImageView
+        android:id="@+id/speak_addNewContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/speak_add_icon" />
+
+    <ProgressBar
+        android:id="@+id/speak_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
